@@ -57,10 +57,10 @@ modules:
         - com.ticktick.TickTick
         - com.slack.Slack
         - com.discordapp.Discord
-        - com.valvesoftware.Steam
-        - net.lutris.Lutris
-        - info.mumble.Mumble
-        - io.github.pyfa_org.Pyfa
+        #- com.valvesoftware.Steam
+        #- net.lutris.Lutris
+        #- info.mumble.Mumble
+        #- io.github.pyfa_org.Pyfa
       remove:
         - org.gnome.eog
     user: {} # Also add Flathub user repo, but no user packages
