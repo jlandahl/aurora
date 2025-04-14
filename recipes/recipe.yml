@@ -38,8 +38,9 @@ modules:
 
   - type: script
     snippets:
-      - rm bitwarden-latest.rpm
+      - "rm bitwarden-latest.rpm"
       - "ln -sf /usr/lib/opt/Bitwarden/bitwarden /etc/alternatives/bitwarden"
+      - "chcon system_u:object_r:usr_t:s0 /usr/share/polkit-1/actions/com.bitwarden.Bitwarden.policy"
 
   - type: systemd
     system:
