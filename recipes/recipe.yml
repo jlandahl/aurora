@@ -39,6 +39,7 @@ modules:
   - type: script
     snippets:
       - rm bitwarden-latest.rpm
+      - "ln -sf /usr/lib/opt/Bitwarden/bitwarden /etc/alternatives/bitwarden"
 
   - type: systemd
     system:
