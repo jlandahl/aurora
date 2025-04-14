@@ -40,7 +40,14 @@ modules:
     snippets:
       - "rm bitwarden-latest.rpm"
       - "ln -sf /usr/lib/opt/Bitwarden/bitwarden /etc/alternatives/bitwarden"
-      - "chcon system_u:object_r:usr_t:s0 /usr/share/polkit-1/actions/com.bitwarden.Bitwarden.policy"
+
+      # this `chcon` command is part of the script that a running Bitwarden
+      # client executes when you tell it to integrate with system
+      # authentication, but in the build process it results in an "operation not permitted" error:
+      #
+      #   chcon: failed to change context of '/usr/share/polkit-1/actions/com.bitwarden.Bitwarden.policy' to 'system_u:object_r:usr_t:s0': Operation not permitted
+      #
+      #- "chcon system_u:object_r:usr_t:s0 /usr/share/polkit-1/actions/com.bitwarden.Bitwarden.policy"
 
   - type: systemd
     system:
