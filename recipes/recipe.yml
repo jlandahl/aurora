@@ -34,11 +34,11 @@ modules:
       - emacsclient
       - vim
       - nordvpn
-      - /tmp/bitwarden-latest.rpm
+      - bitwarden-latest.rpm
 
   - type: script
     snippets:
-      - "rm /tmp/bitwarden-latest.rpm"
+      - "rm /bitwarden-latest.rpm"
       - "ln -sf /usr/lib/opt/Bitwarden/bitwarden /etc/alternatives/bitwarden"
 
       # this `chcon` command is part of the script that a running Bitwarden
