@@ -18,8 +18,8 @@ modules:
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
   - type: script
-    snippets:
-      - curl -sL -o bitwarden-latest.rpm $(curl -s https://api.github.com/repos/bitwarden/clients/releases/latest | jq -r '.assets[] | select(.browser_download_url | endswith(".rpm")) | .browser_download_url' | head -1)
+    scripts:
+      - download-bitwarden.sh
 
   - type: rpm-ostree
     repos:
