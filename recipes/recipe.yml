@@ -33,7 +33,7 @@ modules:
       - emacs
       - emacsclient
       - vim
-      - nordvpn
+      - nordvpn-gui
       - bitwarden-latest.rpm
 
   - type: script
