@@ -27,6 +27,7 @@ modules:
       - nordvpn.repo
     optfix:
       - Bitwarden
+      - nordvpn-gui
     install:
       - micro
       - starship
