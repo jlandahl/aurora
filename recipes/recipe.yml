@@ -56,22 +56,20 @@ modules:
         - nordvpnd
 
   - type: default-flatpaks
-    notify: true # Send notification after install/uninstall is finished (true/false)
-    system:
-      # If no repo information is specified, Flathub will be used by default
-      install:
-        - org.mozilla.firefox
-        - org.gnome.Loupe
-        - com.notesnook.Notesnook
-        - com.ticktick.TickTick
-        - com.slack.Slack
-        - com.discordapp.Discord
-        #- com.valvesoftware.Steam
-        #- net.lutris.Lutris
-        #- info.mumble.Mumble
-        #- io.github.pyfa_org.Pyfa
-      remove:
-        - org.gnome.eog
+    configurations:
+      - notify: true # Send notification after install/uninstall is finished (true/false)
+        scope: system
+        install:
+          - org.mozilla.firefox
+          - org.gnome.Loupe
+          - com.notesnook.Notesnook
+          - com.ticktick.TickTick
+          - com.slack.Slack
+          - com.discordapp.Discord
+          #- com.valvesoftware.Steam
+          #- net.lutris.Lutris
+          #- info.mumble.Mumble
+          #- io.github.pyfa_org.Pyfa
     user: {} # Also add Flathub user repo, but no user packages
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
