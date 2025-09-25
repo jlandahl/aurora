@@ -1,0 +1,10 @@
+modules:
+  - type: rpm-ostree
+    repos:
+      - nordvpn.repo
+    install:
+      - nordvpn
+  - type: systemd
+    system:
+      enabled:
+        - nordvpnd
