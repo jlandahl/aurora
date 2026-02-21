@@ -36,7 +36,6 @@ modules:
       - emacs
       - emacsclient
       - vim
-      - kwalletcli
       - nordvpn-gui
       - bitwarden-latest.rpm
 
