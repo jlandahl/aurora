@@ -38,6 +38,8 @@ modules:
       - vim
       - nordvpn-gui
       - bitwarden-latest.rpm
+      - hostapd
+      - dnsmasq
 
   - type: script
     snippets:
