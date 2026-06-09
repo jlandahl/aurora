@@ -31,8 +31,6 @@ modules:
       - Bitwarden
       - nordvpn-gui
     install:
-      - micro
-      - starship
       - emacs
       - emacsclient
       - vim
