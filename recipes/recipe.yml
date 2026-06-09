@@ -38,6 +38,8 @@ modules:
       - bitwarden-latest.rpm
       - hostapd
       - dnsmasq
+      - starship
+      - steam
 
   - type: script
     snippets:
