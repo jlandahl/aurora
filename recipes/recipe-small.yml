@@ -1,0 +1,12 @@
+
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
+name: aurora-small
+description: Smaller version of the main recipe - no DX, no NVidia
+
+base-image: ghcr.io/ublue-os/aurora
+image-version: latest
+
+modules:
+  - from-file: common-workstation.yml
+  - type: signing
