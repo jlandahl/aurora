@@ -8,31 +8,9 @@ modules:
     scripts:
       - download-bitwarden.sh
 
-  - from-file: common-nordvpn.yml
+  - from-file: common-packages-nordvpn.yml
 
-  - type: dnf
-    repos:
-      copr:
-        - atim/starship
-      files:
-        - nordvpn.repo
-    install:
-      packages:
-        - emacs
-        - emacsclient
-        - vim
-        - nordvpn-gui
-        - bitwarden-latest.rpm
-        - hostapd
-        - dnsmasq
-        - starship
-        - steam
-    remove:
-      packages:
-        # example: removing firefox (in favor of the flatpak)
-        # "firefox" is the main package, "firefox-langpacks" is a dependency
-        - firefox
-        - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+  - from-file: common-packages-workstation.yml
 
   - type: script
     snippets:
