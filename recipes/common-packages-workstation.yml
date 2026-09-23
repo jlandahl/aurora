@@ -4,12 +4,14 @@ modules:
       copr:
         - atim/starship
       files:
+        - https://repo.vivaldi.com/stable/vivaldi-fedora.repo
         - nordvpn.repo
     install:
       packages:
         - emacs
         - emacsclient
         - vim
+        - vivaldi-stable
         - nordvpn-gui
         - bitwarden-latest.rpm
         - starship
