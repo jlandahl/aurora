@@ -6,6 +6,8 @@ modules:
       files:
         - https://repo.vivaldi.com/stable/vivaldi-fedora.repo
         - nordvpn.repo
+      keys:
+        - mega.asc
     install:
       packages:
         - emacs
@@ -15,8 +17,8 @@ modules:
         - nordvpn-gui
         - bitwarden-latest.rpm
         - starship
-        - https://mega.nz/linux/repo/Fedora_44/x86_64/megasync-Fedora_44.x86_64.rpm
-        - https://mega.nz/linux/repo/Fedora_44/x86_64/dolphin-megasync-Fedora_44.x86_64.rpm
+        - megasync
+        - dolphin-megasync
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
