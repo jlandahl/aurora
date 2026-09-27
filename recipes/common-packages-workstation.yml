@@ -6,6 +6,7 @@ modules:
       files:
         - https://repo.vivaldi.com/stable/vivaldi-fedora.repo
         - nordvpn.repo
+        - mega.repo
       keys:
         - mega.asc
     install:
