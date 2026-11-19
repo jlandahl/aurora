@@ -3,7 +3,7 @@ modules:
     repos:
       copr:
         - atim/starship
-        # - fuddlesworth/PlasmaZones
+        - fuddlesworth/PlasmaZones
       files:
         - https://repo.vivaldi.com/stable/vivaldi-fedora.repo
         - nordvpn.repo
@@ -16,8 +16,8 @@ modules:
         - nordvpn-gui
         - bitwarden-latest.rpm
         - starship
-        # - plasmazones
-        - https://github.com/phosphor-works/PlasmaZones/releases/download/v3.5.5-r2/plasmazones-3.5.5-2.fc45.x86_64.rpm
+        - plasmazones
+        #- https://github.com/phosphor-works/PlasmaZones/releases/download/v3.5.5-r2/plasmazones-3.5.5-2.fc45.x86_64.rpm
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
